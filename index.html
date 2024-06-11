@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Interests and Preferences Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Interests and Preferences Survey</h1>
+        <p>Dear Students,<br>We appreciate you taking the time to complete this short survey. Your responses will help us tailor our course content and assessments to better match your interests and preferences.</p>
+        
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="hobbies">What are your favorite hobbies and activities?</label>
+                <textarea id="hobbies" name="hobbies" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="sport">What is your favorite sport or physical activity?</label>
+                <select id="sport" name="sport" required>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Soccer">Soccer</option>
+                    <option value="Tennis">Tennis</option>
+                    <option value="Running">Running</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Other">Other (please specify)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sports-watched">Do you enjoy watching sports? If yes, which ones?</label>
+                <textarea id="sports-watched" name="sports-watched" rows="2" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="music">What type of music do you enjoy listening to?</label>
+                <select id="music" name="music" required>
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Hip-Hop">Hip-Hop</option>
+                    <option value="Classical">Classical</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Country">Country</option>
+                    <option value="Other">Other (please specify)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="movies">What are your favorite genres of movies or TV shows?</label>
+                <select id="movies" name="movies" required>
+                    <option value="Action">Action</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Science Fiction">Science Fiction</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Documentary">Documentary</option>
+                    <option value="Other">Other (please specify)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="books">Do you have any favorite books or authors? If so, please list them.</label>
+                <textarea id="books" name="books" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="cultural-activities">What cultural activities do you enjoy? (Select all that apply)</label>
+                <select id="cultural-activities" name="cultural-activities" multiple required>
+                    <option value="Visiting museums">Visiting museums</option>
+                    <option value="Attending concerts">Attending concerts</option>
+                    <option value="Going to the theater">Going to the theater</option>
+                    <option value="Participating in cultural festivals">Participating in cultural festivals</option>
+                    <option value="Other">Other (please specify)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="languages">What languages do you speak or are you interested in learning?</label>
+                <textarea id="languages" name="languages" rows="2" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="activity-preference">Do you prefer individual or group activities?</label>
+                <select id="activity-preference" name="activity-preference" required>
+                    <option value="Individual">Individual</option>
+                    <option value="Group">Group</option>
+                    <option value="Both">Both</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="learning-preference">How do you prefer to receive information and learn new things?</label>
+                <select id="learning-preference" name="learning-preference" required>
+                    <option value="Visual">Visual (e.g., diagrams, charts)</option>
+                    <option value="Auditory">Auditory (e.g., lectures, discussions)</option>
+                    <option value="Reading/Writing">Reading/Writing (e.g., textbooks, essays)</option>
+                    <option value="Kinesthetic">Kinesthetic (e.g., hands-on activities)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="websites">What are some of your favorite websites or online platforms?</label>
+                <textarea id="websites" name="websites" rows="2" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="passions">Is there any specific topic or subject you are particularly passionate about?</label>
+                <textarea id="passions" name="passions" rows="2" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="motivation">What motivates you the most when learning something new?</label>
+                <select id="motivation" name="motivation" required>
+                    <option value="Achieving good grades">Achieving good grades</option>
+                    <option value="Gaining practical skills">Gaining practical skills</option>
+                    <option value="Personal interest and curiosity">Personal interest and curiosity</option>
+                    <option value="Career advancement">Career advancement</option>
+                    <option value="Other">Other (please specify)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Any additional comments or information you'd like to share about your interests and preferences?</label>
+                <textarea id="comments" name="comments" rows="3" required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('survey-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your responses! Your feedback will help us create a more engaging and personalized learning experience.');
+        });
+    </script>
+</body>
+</html>
